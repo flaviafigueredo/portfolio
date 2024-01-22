@@ -1,0 +1,150 @@
+.main .home {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.main .home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.main .home .infos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1024px;
+}
+
+.main .home .profile-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main .home .infos {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: var(--white-color);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.home .infos .occupation {
+    border-right: 2px solid var(--white-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.home .infos .know-more {
+    border: 1px solid var(--main-color);
+    border-radius: 35px;
+    background-color: rgba(162, 0, 255, 0.2);
+    padding: 10px 80px 10px 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.home .infos .know-more .text {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.home .infos .know-more .arrow {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    font-size: 24px;
+    width: 55px;
+    height: 100%;
+    border-radius: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.home .infos .know-more:hover .arrow {
+    background-color: var(--main-color);
+    width: 100%;
+    border-radius: 35px;
+}
+
+@media(max-width: 1024px) {
+    .main .home .infos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width: 425px) {
+    .main .home .infos {
+        font-size: calc(100% - 4px);
+    }
+
+    .main .home .profile-img {
+        width: calc(100% - 25px);
+        height: 100%;
+    }
+
+    .home .infos .know-more {
+        padding: 5px 50px 5px 10px;
+        font-size: 12px;
+    }
+
+    .home .infos .know-more .arrow {
+        width: 40px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 375px) {
+    .home .infos .know-more {
+        font-size: 12px;
+    }
+}

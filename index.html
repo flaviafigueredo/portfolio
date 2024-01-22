@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/home.css">
+    <link rel="stylesheet" href="src/css/about.css">
+    <link rel="stylesheet" href="src/css/portfolio.css">
+    <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+
+    <title>Flávia Figueredo - Portfólio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <input type="checkbox" id="menu-hamburger">
+
+            <label for="menu-hamburger">
+                <div class="menu-mobile">
+                    <span class="hamburger"></span>
+                </div>
+            </label>
+
+            <ul class="menu">
+                <li class="menu-item selected">
+                    <a href="#home">
+                        <span>Home</span>
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#about">
+                        <span>Sobre</span>
+                        <i class="fa-solid fa-user-large"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#portfolio">
+                        <span>Portfólio</span>
+                        <i class="fa-solid fa-briefcase"></i>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contact">
+                        <span>Contato</span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section home" id="home">
+            <div class="infos-container">
+                <img src="src/images/avatar.jpeg" alt="foto de perfil" class="profile-img">
+
+                <div class="infos">
+                    <h1 class="greeting">Olá! eu sou a Flávia Figueredo,
+                    </h1>
+                    <h2 class="occupation typing-animation">Desenvolvedora FrontEnd Jr.</h2>
+
+                    <button class="know-more" id="scroll-button">
+                        <span class="text">Mais sobre mim</span>
+                        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="title">
+                <h3>Resumo</h3>
+                <h3>Sobre <span>mim</span></h3>
+            </div>
+
+            <div class="personal-infos">
+                <p>
+                    Desde muito jovem, nutro uma paixão pela tecnologia. Minha jornada acadêmica iniciou-se com
+                    uma formação em Produção Audiovisual, mas meu verdadeiro sonho sempre foi explorar o fascinante
+                    mundo da programação. Decidi transformar esse sonho em realidade, embarcando em uma jornada de
+                    estudos dedicados a <span>HTML, CSS, JavaScript e React</span>.
+                </p>
+
+                <p>
+                    Com uma visão de longo prazo, concluí uma Pós-graduação em Desenvolvimento FullStack e, atualmente,
+                    estou imersa em uma Pós-graduação em Engenharia de Software para aprimorar ainda mais minhas
+                    habilidades. Essa trajetória reflete meu comprometimento e determinação na transição de carreira para a área de Desenvolvimento FrontEnd, contribuindo com inovação e criatividade para a vanguarda da tecnologia.
+                </p>
+
+                <p>
+                    Para além do código, sou uma entusiasta do café, e nos meus momentos de lazer, desfruto de atividades como caminhar com meu cachorro, mergulhar em boas leituras e apreciar filmes e séries.
+                </p>
+
+                <a href="src/files/curriculo-flavia-dev-frontend.pdf" target="_blank" class="cv-btn">Baixar CV</a>
+            </div>
+
+            <h4 class="about-me-titles">Minhas habilidades</h4>
+            <div class="skills-container">
+                <div>
+                    <div class="technology">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <p>React</p>
+                </div>
+                <div>
+                    <div class="technology">
+                        <i class="fa-brands fa-square-js"></i>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <div class="technology">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <div class="technology">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <div class="technology">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <p>GitHub</p>
+                </div>
+                <div>
+                    <div class="technology">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <p>Git</p>
+                </div>
+            </div>
+
+            <h4 class="about-me-titles">Educação</h4>
+            <ul class="education">
+                <li class="item">
+                    <div class="year">
+                        <span><i class="fa-solid fa-briefcase"></i></span>
+                        <p>2023 - Presente</p>
+                    </div>
+
+                    <h5>Pós-Graduação em Engenharia de Software <span>- Faculdade Descomplica</span></h5>
+                </li>
+
+                <li class="item">
+                    <div class="year">
+                        <span><i class="fa-solid fa-briefcase"></i></span>
+                        <p>2023 - Presente</p>
+                    </div>
+
+                    <h5>Curso em Desenvolvimento FrontEnd <span>- DevQuest</span></h5>
+                </li>
+
+                <li class="item">
+                    <div class="year">
+                        <span><i class="fa-solid fa-briefcase"></i></span>
+                        <p>2023</p>
+                    </div>
+
+                    <h5>Pós-Graduação em Desenvolvimento FullStack <span>- Faculdade Descomplica</span></h5>
+                </li>
+
+                <li class="item">
+                    <div class="year">
+                        <span><i class="fa-solid fa-briefcase"></i></span>
+                        <p>2014</p>
+                    </div>
+
+                    <h5>Produção Audiovisual <span>- PUCRS</span></h5>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section portfolio" id="portfolio">
+            <div class="title">
+                <h3>Projetos</h3>
+                <h3>Meu <span>Portfólio</span></h3>
+            </div>
+
+            <div class="projects">
+                <div class="project">
+                    <a href="https://pokedex-quest-react-avancado.vercel.app/" target="_blank">
+
+                        <img src="src/images/pokedex-react.gif" alt="Gif da Pokédex" />
+
+                        <div class="project-info">
+                            <h3>Pokédex</h3>
+                            <p>Projeto feito com API, React e JavaScript</p>
+                            <p>🔗 Ver no GitHub Pages</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://flaviafigueredo.github.io/projeto-github-api/" target="_blank">
+
+                        <img src="src/images/projeto-github-api.gif" alt="Gif do projeto GitHub API" />
+
+                        <div class="project-info">
+                            <h3>Projeto GitHub API - buscando usuários com fetch</h3>
+                            <p>Projeto feito com API, JavaScript, CSS e HTML5</p>
+                            <p>🔗 Ver no GitHub Pages</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://flaviafigueredo.github.io/advice-generator-app/" target="_blank">
+
+                        <img src="src/images/advice-generator-app.gif" alt="Gif do gerador de conselhos" />
+
+                        <div class="project-info">
+                            <h3>Advice generator app</h3>
+                            <p>Projeto feito com API, JavaScript, CSS e HTML5</p>
+                            <p>🔗 Ver no GitHub Pages</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://flaviafigueredo.github.io/desafio-devquest-js-intermediario/" target="_blank">
+
+                        <img src="src/images/validacao-de-formulario.gif"
+                            alt="Gif do projedo de validação de formulário" />
+
+                        <div class="project-info">
+                            <h3>Validação de formulário</h3>
+                            <p>Projeto feito com JavaScript, CSS e HTML5</p>
+                            <p>🔗 Ver no GitHub Pages</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="title">
+                <h3>Contato</h3>
+                <h3>Me <span>encontre</span></h3>
+            </div>
+
+            <div class="get-in-touch">
+                <p class="text">Sinta-se à vontade para entrar em contato comigo.</p>
+
+                <div class="email-container">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <div>
+                        <p>Me envie um e-mail</p>
+                        <p>flaviagfigueredo@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/flaviafigueredo/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/flaviafigueredo" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.instagram.com/flaviafigueredo/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Desenvolvido com 💜 por <span>Flávia Figueredo</span>.
+
+            Favicon by <a target="_blank" href="https://icons8.com">Icons8</a>.
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

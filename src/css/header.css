@@ -1,0 +1,186 @@
+body .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.header .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    right: 24px; 
+    top: calc(100vh - 65vh);
+    position: fixed;
+    z-index: 1;
+}
+
+.header .menu .menu-item {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: rgba(162,0,255,0.5);
+    cursor: pointer;
+}
+
+.header .menu a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: 300;    
+}
+
+.header .menu .menu-item span {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    padding: 10px 50px 10px 20px;
+    opacity: 0;
+    z-index: -1;
+    border: 3px solid transparent;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.header .menu .menu-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .menu .menu-item:hover span {
+    opacity: 1;
+    border: 3px solid var(--dark-color);
+    background-color: var(--main-color);    
+}
+
+.header .menu .menu-item:hover, .header .menu .selected { 
+    border: 3px solid var(--dark-color);
+    background-color: var(--main-color);
+    border-radius: 50px;
+}
+
+.header .menu-mobile {
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+
+.header nav label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.header .menu-mobile .hamburger {
+    position: relative;
+    display: block;
+    background-color: var(--light-gray);
+    width: 30px;
+    height: 3px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .menu-mobile .hamburger::before, .header .menu-mobile .hamburger::after {
+    background-color: var(--light-gray);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.header .menu-mobile .hamburger::before {
+    top: -10px;
+}
+
+.header .menu-mobile .hamburger::after {
+    bottom: -10px;
+}
+
+.header input {
+    display: none;
+}
+
+.header input:checked ~ label .hamburger {
+    transform: rotate(45deg);
+}
+
+.header input:checked ~ label .hamburger::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked ~ label .hamburger::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media(max-width: 834px) {
+    .header .menu .menu-item {
+        background-color: transparent;
+    }
+
+    .header .menu-mobile {
+        display: block;
+    }
+
+    .header nav input:checked ~ ul {
+        display: block;
+    }
+
+    .header nav {
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header .menu {        
+        display: none;
+        background-color: var(--dark-gray);
+        top: 80px;
+        right: 25px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .header .menu .menu-item {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+        box-shadow: none;
+    }    
+
+    .header .menu a {
+        user-select: none;
+        color: var(--main-color);
+    }
+
+    .header .menu .menu-item span {
+        position: unset;
+        padding: 10px 20px;
+        opacity: 1;
+        color: var(--white-color);
+        transition: none;
+    }
+
+    .header .menu .menu-item:hover, .header .menu .selected, .header .menu .menu-item:hover span { 
+        border: none;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}

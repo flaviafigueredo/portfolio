@@ -1,0 +1,72 @@
+.main .contact .get-in-touch {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.main .contact .get-in-touch .text {
+    max-width: 400px;
+    line-height: 25px;
+}
+
+.main .contact .email-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main .contact .email-container .fa-envelope-open-text {
+    font-size: 32px;
+    margin-right: 8px;
+    color: var(--main-color);
+}
+
+.main .contact .email-container p:first-child {
+    text-transform: uppercase;
+    color: var(--light-gray);
+    margin-bottom: 5px;
+}
+
+.main .contact .email-container p:last-child {
+    font-weight: 600;
+}
+
+.main .contact .socials {
+    margin-top: 5%;
+}
+
+.main .contact .socials a {    
+    color: var(--white-color);
+    font-size: 24px;
+    background-color: #222222;    
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.5s ease-in-out;
+}
+
+.main .contact .socials a:hover {
+    background-color: var(--main-color);
+}
+
+@media(max-width: 600px) {
+    .main .contact .get-in-touch {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 425px) {
+    .main .contact .get-in-touch {
+        width: 80%;
+    }
+}

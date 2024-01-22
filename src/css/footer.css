@@ -1,0 +1,14 @@
+footer {
+    border-top: 1px solid var(--dark-gray);
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+footer p span, footer p a {
+    color: var(--main-color);
+}
