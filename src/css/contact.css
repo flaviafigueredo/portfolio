@@ -15,23 +15,21 @@
 .main .contact .email-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 .main .contact .email-container .fa-envelope-open-text {
-    font-size: 32px;
-    margin-right: 8px;
+    font-size: 24px;
     color: var(--main-color);
 }
 
-.main .contact .email-container p:first-child {
+.main .contact .email-container p {
     text-transform: uppercase;
-    color: var(--light-gray);
-    margin-bottom: 5px;
+    color: var(--light-gray);    
 }
 
-.main .contact .email-container p:last-child {
-    font-weight: 600;
+.main .contact .email-container p a {
+    color: var(--main-color);
 }
 
 .main .contact .socials {
