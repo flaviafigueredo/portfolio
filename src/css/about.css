@@ -41,7 +41,7 @@
     max-width: 800px;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 70px;
     margin-bottom: 100px;
 }
 
@@ -162,12 +162,6 @@
 
     .about .education .item {
         height: 100px;
-    }
-}
-
-@media(max-width: 600px) {
-    .about .skills-container {
-        gap: 100px;
     }
 }
 
