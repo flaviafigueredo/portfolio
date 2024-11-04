@@ -163,9 +163,26 @@
     .about .education .item {
         height: 100px;
     }
+
+    .about .skills-container {
+        padding: 10px;
+        gap: 60px;
+    }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 480px) {
+    .about .skills-container {
+        padding: 10px;
+        gap: 50px;
+    }
+}
+
+@media(max-width: 468px) {
+    /* .about .skills-container {
+        padding: 10px;
+        gap: 60px;
+    } */
+
     .about .personal-infos p, .about .personal-infos .cv-btn, .about .skills-container p {
         font-size: 16px;
     }

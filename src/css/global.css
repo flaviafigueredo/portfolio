@@ -46,14 +46,24 @@ body {
     color: var(--main-color);
 }
 
-@media(max-width: 425px) {
+@media(max-width: 526px) {
+    .main .section .title h3:first-child {
+        font-size: 80px;
+    }
+
+    .main .section .title h3:last-child {
+        font-size: 50px;
+        top: 28px;
+    }
+}
+
+@media(max-width: 468px) {
     .main .section .title h3:first-child {
         font-size: 60px;
     }
 
     .main .section .title h3:last-child {
         font-size: 30px;
-        top: 28px;
     }
 }
 
